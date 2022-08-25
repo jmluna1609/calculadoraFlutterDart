@@ -72,7 +72,7 @@ class CalculatorBloc extends Bloc<CalculatorEvent, CalculatorState> {
     }
 
   }
-//async* va junto con yield
+//async* va junto con stream yield
 Stream<CalculatorState> _resetAC() async* {
     yield CalculatorState(
         firstNumber: '0',

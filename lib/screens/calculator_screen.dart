@@ -66,7 +66,7 @@ class CalculatorScreen extends StatelessWidget {
                   CalculatorButton( 
                     text: 'X',
                     bgColor: Color(0xffF0A23B ),
-                    onPressed: () => calculatorBloc.add(OperationEntry('X')),
+                    onPressed: () => calculatorBloc.add(OperationEntry('*')),
                   ),
                 ],
               ),
