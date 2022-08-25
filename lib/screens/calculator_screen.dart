@@ -27,7 +27,7 @@ class CalculatorScreen extends StatelessWidget {
                 children: [
                   CalculatorButton( 
                     text: 'AC',
-                    bgColor: Color(0xffA5A5A5 ),
+                    bgColor: Color(0xffFF5733  ),
                     onPressed: () => calculatorBloc.add(ResetAC()) /*print('AC')*/,
                   ),
                   CalculatorButton( 
@@ -42,7 +42,7 @@ class CalculatorScreen extends StatelessWidget {
                   ),
                   CalculatorButton( 
                     text: '/',
-                    bgColor: Color(0xffF0A23B ),
+                    bgColor: Color(0xff30E349 ),
                     onPressed: () => calculatorBloc.add(OperationEntry('/')),
                   ),
                 ],
@@ -65,7 +65,7 @@ class CalculatorScreen extends StatelessWidget {
                   ),
                   CalculatorButton( 
                     text: 'X',
-                    bgColor: Color(0xffF0A23B ),
+                    bgColor: Color(0xff30E349 ),
                     onPressed: () => calculatorBloc.add(OperationEntry('*')),
                   ),
                 ],
@@ -88,7 +88,7 @@ class CalculatorScreen extends StatelessWidget {
                   ),
                   CalculatorButton( 
                     text: '-',
-                    bgColor: Color(0xffF0A23B ),
+                    bgColor: Color(0xff30E349 ),
                     onPressed: () => calculatorBloc.add(OperationEntry('-')),
                   ),
                 ],
@@ -111,7 +111,7 @@ class CalculatorScreen extends StatelessWidget {
                   ),
                   CalculatorButton(
                     text: '+',  
-                    bgColor: Color(0xffF0A23B ),
+                    bgColor: Color(0xff30E349 ),
                     onPressed: () => calculatorBloc.add(OperationEntry('+')),
                   ),
                 ],
