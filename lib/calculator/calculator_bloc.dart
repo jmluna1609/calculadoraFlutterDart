@@ -96,6 +96,25 @@ Stream<CalculatorState> _resetAC() async* {
         mathResult: '${num1 + num2}' //$ para que convierta a string
       );
         break;
+
+      case '-':
+        yield state.copywith(
+            secondNumber: state.mathResult,
+            mathResult: '${num1 - num2}' //$ para que convierta a string
+        );
+        break;
+      case '*':
+        yield state.copywith(
+            secondNumber: state.mathResult,
+            mathResult: '${num1 * num2}' //$ para que convierta a string
+        );
+        break;
+      case '/':
+        yield state.copywith(
+            secondNumber: state.mathResult,
+            mathResult: '${num1 / num2}' //$ para que convierta a string
+        );
+        break;
       default:
         yield state;
     }
