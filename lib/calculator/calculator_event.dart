@@ -6,25 +6,26 @@ part of 'calculator_bloc.dart';
 @immutable
 abstract class CalculatorEvent {}
 
-class ResetAC extends CalculatorEvent{ }
+class ResetAC extends CalculatorEvent {}
 
 //tengo que saber el numero o punto que esta presionando
-class AddNumber extends CalculatorEvent{
+class AddNumber extends CalculatorEvent {
   final String number;
- //permite enviar informacion
+  //permite enviar informacion
   AddNumber(this.number);
 }
 
 //cambia signo de negativo a positivo
-class ChangeNegativePositive extends CalculatorEvent{}
-//borra un numero
-class DeleteLastEntry extends CalculatorEvent{}
-//operacion a realizar
-class OperationEntry extends CalculatorEvent{
-  final String oparation;
-  OperationEntry(this.oparation);
-}
-//es el signo = que calcula el resultado
-class CalculateResult extends CalculatorEvent{
+class ChangeNegativePositive extends CalculatorEvent {}
 
+//borra un numero
+class DeleteLastEntry extends CalculatorEvent {}
+
+//operacion a realizar
+class OperationEntry extends CalculatorEvent {
+  final String oparation;
+  OperationEntry(this.oparation); //recibe la operacion
 }
+
+//es el signo = que calcula el resultado
+class CalculateResult extends CalculatorEvent {}
